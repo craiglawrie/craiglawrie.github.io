@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="controls.js"></script>
+    <title>Craig Lawrie</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title">Craig Lawrie</h1>
+    </div>
+    <!--
+    -->
+    <div class="main">
+        <div class="menu-block block">
+            <ul>
+                <li class="menu-tab" id="menu-header">
+                    <div class="menu-text">PORTFOLIO ITEMS</div>
+                </li>
+                <li class="menu-item menu-tab" onclick="toggle1()">
+                    <div class="menu-text">COUNTDOWN TIMER</div>
+                </li>
+                <li class="menu-item menu-tab" onclick="toggle2()">
+                    <div class="menu-text">TIME AT TEMPERATURE</div>
+                </li>
+                <li class="menu-item menu-tab" onclick="toggle3()">
+                    <div class="menu-text">VENDING MACHINE</div>
+                </li>
+                <li class="menu-item menu-tab" onclick="toggle4()">
+                    <div class="menu-text">NATIONAL PARKS</div>
+                </li>
+                <li class="menu-item menu-tab" onclick="toggle5()">
+                    <div class="menu-text">COMING SOON!</div>
+                </li>
+                <li class="menu-item menu-tab" onclick="toggle6()">
+                    <div class="menu-text">COMING SOON!</div>
+                </li>
+            </ul>
+        </div><!--
+        --><div class="content-block block">
+            <h2>ABOUT ME</h2>
+            <div class="body-text">
+                <p class="column">
+                    I have a degree in physics from Case Western Reserve University and more than eight years of diverse engineering experience.
+                    I have designed MRI coils to speed up medical scans and improve the image quality, and I have developed
+                    helicopter driveshafts to reduce aircraft weight. My product development has extended from concept through
+                    production and included generating build and test instructions and quality inspection documentation.
+                    During this time, I programmed in Microsoft VBA, MATLAB, QTScript, ANSYS APDL, and more.
+                </p>
+                <p class="column">
+                    My particular strength lies in my analytical ability, especially in identifying and combining the important details for the
+                    target result. This skill has contributed to my success in physics, engineering, programming, and, perhaps
+                    surprisingly, teaching ballroom dance. I am attending Tech Elevator Cleveland to develop my skills in
+                    C#, ASP.NET MVC, HTML, CSS, Javascript, and SQL, and I am using any extra time to study Unity and Python.
+                    I am looking for opportunities where I have a steady supply of intellectually stimulating tasks.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-vert-center">
+            <div class="footer-column">
+                <div class="footer-text">Project Portfolio Page (90s Style!)</div>
+            </div>
+            <div class="footer-column" id="foot-col-mid">
+                <div class="footer-text">&copy; Craig Lawrie 2018</div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-text">Always looking for interesting projects!</div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay1">
+        <div class="overlay-container">
+            <div class="overlay-content">
+                <img src="assets/CountdownTimer.gif" alt="">
+                <h2>Countdown Timer</h2>
+                <p>This project started as an investigation into querying the system clock. The System.Timer class worked even
+                    better, allowing the use of an event handler to avoid tying up system resources. I was able to tidy up
+                    the code significantly by using an Actions array to grab individual ASCII art numbers. See it on
+                    <a href="https://github.com/craiglawrie/CountdownTimer" target="_blank">github</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

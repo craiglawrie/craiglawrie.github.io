@@ -1,0 +1,160 @@
+html {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+.header {
+    height: 13vh;
+    background-color: darkblue;
+    color: antiquewhite;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    width: 100vw;
+    height: 80vh;
+}
+
+.footer {
+    height: 7vh;
+    background-color: darkblue;
+    color: antiquewhite;
+    overflow: hidden;
+    position: relative;
+    font-size: 2vh;
+}
+
+.footer-vert-center {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-column {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.block {
+    display: inline-block;
+}
+
+.menu-block {
+    width: 15rem;
+    max-width: 40vw;
+    height: 80vh;
+    position: absolute;
+    left: 0;
+    bottom: 7vh;
+}
+
+.content-block {
+    width: calc(100vw - 17rem);
+    min-width: calc(60vw - 2rem);
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    padding: 0 1rem;
+    overflow-y: scroll;
+}
+
+.menu-tab {
+    list-style: none;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0 2vh 2vh 0;
+    height: calc(11.43vh - 2px);
+
+    background-color: cornflowerblue;
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.menu-item:hover {
+    width: calc(100% + 8px);
+}
+
+#menu-header div {
+    color: black;
+}
+
+.menu-text {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-weight: bold;
+}
+
+.menu-block ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.overlay {
+    width: calc(100vw - 15rem);
+    min-width: calc(60vw);
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    top: 13vh;
+    margin: 0;
+    padding: 0;
+
+    background-color: rgba(2, 2, 158, 0.459);
+    
+    display: none;
+}
+
+.overlay-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 95%;
+    height: 95%;
+    border-radius: 3vw;
+    background-color: white;
+
+    margin: 0;
+    padding: 0;
+    border: 4px darkblue solid;
+
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.overlay-content {
+    margin: 1rem;
+}
+
+.overlay-content img {
+    width: 50%;
+}
