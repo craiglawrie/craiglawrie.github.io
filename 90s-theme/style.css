@@ -124,7 +124,7 @@ body {
 
     background-color: rgba(2, 2, 158, 0.459);
     
-    display: none;
+    display: block;
 }
 
 .overlay-container {
