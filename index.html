@@ -88,6 +88,14 @@
             <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
             <hr class="star-dark mb-5">
             <div class="row">
+                <div class="col-lg-8 ml-auto mr-auto">
+                    <p class="lead">My professional software development experience has not included any public-facing
+                        content to share. Instead, here are a few examples of projects that I have worked on for fun,
+                        for practice, or to experiment with a new language or tool.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <h3 class="text-center text-uppercase text-secondary mb-0">Countdown Timer</h3>
                     <a class="portfolio-item d-block mx-auto"
@@ -127,6 +135,37 @@
                         </div>
                         <img class="img-fluid"
                              src="img/portfolio/TicTacToe.gif"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 ml-auto">
+                    <h3 class="text-center text-uppercase text-secondary mb-0">Virtual Metroparks</h3>
+                    <a class="portfolio-item d-block mx-auto"
+                       href="#portfolio-modal-4">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid"
+                             src="img/portfolio/VirtualMetroparks.gif"
+                             alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mr-auto">
+                    <h3 class="text-center text-uppercase text-secondary mb-0">Ill Advised Regex</h3>
+                    <a class="portfolio-item d-block mx-auto"
+                       href="#portfolio-modal-5">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid"
+                             src="img/portfolio/IllAdvisedRegex.gif"
                              alt="">
                     </a>
                 </div>
@@ -188,9 +227,7 @@
             <div class="row">
                 <div class="col-lg-6 ml-auto mr-auto">
                     <div class="video">
-                        <iframe width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/7ikQREvVyQA"
+                        <iframe src="https://www.youtube.com/embed/7ikQREvVyQA"
                                 frameborder="0"
                                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
@@ -370,12 +407,23 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Coming soon!</h2>
+                        <h2 class="text-secondary text-uppercase mb-0">Virtual Metroparks</h2>
                         <hr class="star-dark mb-5">
                         <img class="img-fluid mb-5"
-                             src="img/portfolio/game.png"
+                             src="img/portfolio/VirtualMetroparks.gif"
                              alt="">
-                        <p class="mb-5">I will add more side projects as they come up!</p>
+                        <p class="mb-5">This full stack project was my team's capstone project at Tech Elevator. We used
+                            ASP.NET 5.0, MS SQL Server, and the open source <a
+                               href="https://github.com/mpetroff/pannellum"
+                               target="_blank">pannellum</a> library to create a 'virtual tour' experience for the
+                            Cleveland Area Metroparks. Our team won first prize for the <a
+                               href="https://www.clevelandmetroparks.com/special-pages/hackathoncleveland"
+                               target="_blank">2018 Cleveland Metroparks Hackathon</a> with this project!
+                            See it on <a href="https://github.com/craiglawrie/VirtualMetroparks"
+                               target="_blank">github</a> or on
+                            <a href="http://virtualmetroparks.apphb.com/"
+                               target="_blank">AppHarbor</a>! (Note that only "South Chagrin Reservation" has a trail.)
+                        </p>
                         <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
                            href="#">
                             <i class="fa fa-close"></i>
@@ -397,12 +445,20 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Coming soon!</h2>
+                        <h2 class="text-secondary text-uppercase mb-0">Ill Advised Regex</h2>
                         <hr class="star-dark mb-5">
                         <img class="img-fluid mb-5"
-                             src="img/portfolio/safe.png"
+                             src="img/portfolio/IllAdvisedRegex.gif"
                              alt="">
-                        <p class="mb-5">I will add more side projects as they come up!</p>
+                        <p class="mb-5">Quick work story: I was working once on a tool that would compare XML between
+                            two different API responses, and I wanted the user to be able to 'fuzzy search' the content,
+                            including allowing number ranges. I quickly learned that regex was not the correct tool for
+                            including number ranges in a search string, where it would be better to extract the numbers
+                            and use a small amount of C# logic instead. But that meant missing out on all this fun! So I
+                            went home and wrote a tool to generate regex patterns that would match ranges of numbers.
+                            What better way to increase my comfort with regex? As a bonus, this was a great opportunity
+                            to practice some TDD. See it on <a href="https://github.com/craiglawrie/IllAdvisedRegex"
+                               target="_blank">github</a>.</p>
                         <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss"
                            href="#">
                             <i class="fa fa-close"></i>
